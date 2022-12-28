@@ -32,11 +32,11 @@ int main()
 
     for(int i=0;i<4;i++){
         if(arr[i].Balance<100){
-        printf("Name is %s\n", arr[i].name);
-        printf("Account number is %d\n", arr[i].ACNo);
+            printf("Name is %s\n", arr[i].name);
+            printf("Account number is %d\n", arr[i].ACNo);
         }
         
-        }
+    }
     
 
 

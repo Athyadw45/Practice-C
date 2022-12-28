@@ -11,30 +11,34 @@ struct Bank
 
 int main()
 {
-    Bank cust1;
-    Bank cust2;
-    Bank cust3;
 
-    strcpy(cust1.name , "Suhas");
-    strcpy(cust2.name , "Rahul");
-    strcpy(cust3.name , "Rohit");
+  Bank arr[10];
 
-    cust1.ACNo = 45856;
-    cust2.ACNo = 45868;
-    cust3.ACNo = 87459;
+    strcpy(arr[0].name , "Suhas");
+    strcpy(arr[1].name , "Rahul");
+    strcpy(arr[2].name , "Rohit");
+    strcpy(arr[3].name , "Siddharth");
 
-    cust1.Balance = 147;
-    cust2.Balance = 54;
-    cust3.Balance = 15000;
+    arr[0].ACNo = 45856;
+    arr[1].ACNo = 45868;
+    arr[2].ACNo = 87459;
+    arr[3].ACNo = 67543;
 
-   
+    arr[0].Balance = 147;
+    arr[1].Balance = 54;
+    arr[2].Balance = 15000;
+    arr[4].Balance = 36;
+    printf("Customers with balance less than 100\n");
 
-
-    printf("Deatils of Customer whose balance is less than 100\n");
+    for(int i=0;i<4;i++){
+        if(arr[i].Balance<100){
+        printf("Name is %s\n", arr[i].name);
+        printf("Account number is %d\n", arr[i].ACNo);
+        }
+        
+        }
     
-    printf("Name %s\n",cust2.name);
-    printf("Account Number : %d\n",cust2.ACNo);
-    
+
 
     return 0;
 }
